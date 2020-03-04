@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+            <title>Dolar Hoy</title>
+            <link rel="stylesheet" href="misestilos.css">
+            <!--<?php $cont = file_get_contents("Conexion.php"); echo $cont;?>!-->
+    </head>
+    <body>
+        <div id="agrupar">
+        <header id="cabecera" >
+                <h1>¿Como esta el dolar?</h1>
+        </header>
+        <section id="seccion">
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>¿Que es el dolar?</h1><br>
+                        <p>La palabra dólar por antonomasia se refiere a la moneda oficial de Estados Unidos desde su independencia a finales del siglo XVIII. Esta palabra es de origen español y se refiere al dólar de plata, la moneda empleada por los españoles en América durante la época colonial, ya que se trataba de una moneda fuerte y muy extendida a nivel global en las transacciones comerciales entre América y Europa.</p><br>
+                        <img src="https://media.cdn.eldestapeweb.com/eldestape/092019/1567709049710.jpg" width="300" height="300"><br><br> 
+                        <p>"Dólar" es la denominación de la moneda de uso oficial de distintos países; entre ellos destaca Estados Unidos por tener el mayor nivel de moneda circulante en el mundo. Algunos países cuyas monedas adoptan esta denominación son: Australia, El salvador, Zimbabwe, Trinidad y Tobago, Barbados, Bahamas... Cabe señalarse que Puerto Rico, Ecuador y El Salvador son incapaces de emitir moneda, puesto que han adoptado al dólar estadounidense como moneda oficial. En Panamá, el dólar tiene curso legal, aunque la moneda oficial sea el Balboa.</p><br>
+                        <h2>¿Porque la importancia del dolar en Colombia?</h2><br>
+                        <p>El dolar en Colombia está regulado por el propio mercado, es decir, para aquellos que compran y venden la moneda. Colombia adopta el llamado tipo de cambio flexible, que varía en función de la oferta y la demanda. Otros países tienen diferentes tipos de cambio e intervenir con más fuerza en el tipo de cambio. «El Banco Central libera dólares cuando el mercado se da cuenta de que los altos precios están dañando la economía. El gobierno no admite explícitamente esta intervención, y este tema siempre ha generado controversia en relación con el papel de AC en esta dirección», dice el profesor.</p><br>
+                        <script src="javascript/funcion.js"></script> 
+                        <form>
+                            <input type="text" name="txt" size="30" value="Texto a seleccionar"> 
+                            <input type="button" value="Selecciona texto" onclick="setfocus()"> 
+                        </form>
+                        <br>
+                        <h1>Agregar recordatorio en google Calendar</h1><br>
+                        <div id="contenut" style="width: 100%; float: left;">
+                            <div> 
+                                <div> 
+                                    <form name="adicionar" method="POST" action="#"> 
+                                    Evento: <?php echo (isset($_SESSION['eventID']) ? $_SESSION['eventID'] : ""); ?> 
+                                    <input type="hidden" name="" value="<?php echo (isset($_SESSION['eventID']) ? $_SESSION['eventID'] : ""); ?>" /> 
+                                    <input type="text" name="Tittle" value="<?php echo (isset($_POST['Tittle']) ? $_POST['Tittle'] : ""); ?>" placeholder="Titulo"/> 
+                                    <input type="text" name="Description" value="<?php echo (isset($_POST['Description']) ? $_POST['Description'] : ""); ?>" placeholder="Descripcion"/> 
+                                    <div> 
+                                    <label>Fecha de inicio</label> 
+                                    <input type="date" name="DateStart" value="<?php echo (isset($_POST['DateStart']) ? $_POST['DateStart'] : ""); ?>" placeholder="DD/MM/YYYY"/> 
+                                    <input type="time" name="TimeStart" value="<?php echo (isset($_POST['TimeStart']) ? $_POST['TimeStart'] : ""); ?>" placeholder="10:20"/> 
+                                    </div> 
+                                    <div> 
+                                    <label>Fecha final</label> 
+                                    <input type="date" name="DateEnd" value="<?php echo (isset($_POST['DateEnd']) ? $_POST['DateEnd'] : ""); ?>" placeholder="DD/MM/YYYY"/> 
+                                    <input type="time" name="TimeEnd" value="<?php echo (isset($_POST['TimeEnd']) ? $_POST['TimeEnd'] : ""); ?>" placeholder="10:20" /> 
+                                </div> 
+                             <div> 
+                                <input class="btn" type="submit" value="Insertar" name="status" /> 
+                                <input class="btn" type="submit" value="Cancelar" name="status" /> 
+                                <input class="btn" type="submit" value="Actualizar" name="status" /> 
+                            </div> <br><br>
+                            <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=jhongabr2@gmail.com&amp;color=%232952A3&amp;ctz=Ga.3123430617" style=" border-width:0 " width="600" height="600" frameborder="0" scrolling="no"></iframe><br><br>
+                            </form> 
+                           </div> 
+                          </div> 
+                         </div>     
+                    </hgroup>
+                    <script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","//s.bookcdn.com//css/cl/bw-cl-150x70.css"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_1_1333212281"><div style="width:150px; height:70px; margin: 0 auto;"><a href="https://hotelmix.es/time/bogota-18970">Bogotá</a><br/></div></div> <script type="text/javascript"> function setWidgetData_1333212281(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_1333212281 = -1; </script> <script type="text/javascript" charset="UTF-8" src="https://widgets.booked.net/time/info?ver=2&domid=582&type=1&id=1333212281&scode=124&city_id=18970&wlangid=4&mode=1&details=0&background=ece0bf&color=4a5092&add_background=ffffff&add_color=2071c9&head_color=ffffff&border=1&transparent=0"></script>
+                     </header> 
+            </article>
+        </section>
+        <aside id="columna" >
+            <h1>Actualidad del dolar</h1><br>
+            <div id="IndicadoresMin">
+                <h2><a href="https://dolar.wilkinsonpc.com.co/"></a></h2>
+            </div>
+            <script type="text/javascript" src="https://dolar.wilkinsonpc.com.co/widgets/gratis/indicadores-economicos-min.js?ancho=170&alto=85&fondo=transparent&fsize=10&ffamily=sans-serif&fcolor=000000">
+            </script>
+        </aside>
+        <aside id="columna">
+            <h1>Para mas informacion del dolar</h1><br>
+            <a href="https://dolar.wilkinsonpc.com.co/divisas/dolar.html">cliquea aqui</a>
+        </aside>
+        <aside id="columna">
+            <script src="funciones.js"></script>  
+                <script>
+                    document.write('La fecha de hoy es:'+retornarFecha());
+                    document.write('<br>');
+                    document.write('La hora es:'+retornarHora());
+                </script>
+        </aside>
+        </div>
+<style type="text/style.css"></style>
+</body>
+</html>
